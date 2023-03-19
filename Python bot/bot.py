@@ -1,34 +1,22 @@
 import pywhatkit
 import datetime, time, os, random, keyboard
+import messages, dictionary
 
+path = "../Python bot/Images" #my image path directory
 
-message = [", wishing you a very Happy Birthday filled with love, joy, and wonderful memories that will last a lifetime.", 
-           ", Happy Birthday! May your day be filled with laughter, love, and all the things that bring you joy!",
-           ", another year, another adventure! Wishing you a very Happy Birthday and a year full of exciting experiences and unforgettable memories!",
-           ", today is your day to shine! Happy Birthday, my dear friend! May your day be as bright and beautiful as you are! ",
-           ", on this special day, I wish you all the happiness, success, and love in the world! Happy Birthday and may all your dreams come true!",
-           ", Happy Birthday to someone who makes the world a better place just by being in it! May your day be filled with all the things that make you smile!",
-           ", another year older, another reason to celebrate! Happy Birthday and may this year be even more amazing than the last!",
-           ", wishing you a Happy Birthday filled with all the things you love! May your day be as wonderful as you are!",
-           ", today is the day you were born and the world became a brighter place! Happy Birthday and may your light shine even brighter this year!",
-           ", cheers to another year of life and all the adventures that come with it! Happy Birthday and may your day be full of laughter, love, and lots of cake!",
-           ", may your birthday be as wonderful and special as you are! Happy Birthday and here's to another year of making unforgettable memories!"]
-path = "../Python bot/Images"
-
-
-now = datetime.datetime.now()
-for key,value in dict.items():
-    if key == (str(now.day) + "-" + str(now.month)):
+now = datetime.datetime.now() #modul to get the current date and time
+for key,value in dictionary.phone_book.items(): #.items() return a sequence of tuples
+    if key == (str(now.day) + "-" + str(now.month)): # checks if the current date is in the dictionary.phone_book (key)
         for name, phone_number in value.items():
-            files = os.listdir(path)
-            rand = random.choice(files)
-            file_path = os.path.join(path, rand)
-            rand_message = random.choice(message)
-            pywhatkit.sendwhats_image(phone_number, file_path, caption=name + rand_message)
-            time.sleep(20)
-        break
+            files = os.listdir(path) # saves a list of all the files in the path directory
+            rand = random.choice(files) # choose a random file from files
+            file_path = os.path.join(path, rand) # joins path and random file
+            rand_message = random.choice(messages.message)
+            pywhatkit.sendwhats_image(phone_number, file_path, caption= name + rand_message) # modul to send a Whatsapp message, it takes phone number, "image source", and a caption of a photo, which consist of person's name and a random birthday wish
+            time.sleep(20) #pauses the program for 20 seconds after sending each message to prevent the program from overwhelming the Whatsapp server or if internet connection is to slow so the message can be send on time. The duration of the pause is adjustable.
+        break # break out of the loop after sending messages to all the people whose birthdays are today
     # print(key)
         
-keyboard.press_and_release("ctrl+shift+w")
+keyboard.press_and_release("ctrl+shift+w") #closes all the tabs after finishing the script
 
 
