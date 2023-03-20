@@ -1,6 +1,6 @@
 # WhatsappBirthdayBot
 
-A simple WhatsApp bot that sends personalized birthday messages to your contacts automatically, so you can ensure that you never miss a special day again. With this bot, you'll be able to streamline your birthday wishes and make sure that each message feels unique and thoughtful. Plus, your friends and family will appreciate the effort you put in to remember their birthdays and make them feel special.
+A simple WhatsApp bot that sends personalized birthday messages and images to your contacts automatically, so you can ensure that you never miss a special day again. With this bot, you'll be able to streamline your birthday wishes and make sure that each message feels unique and thoughtful. Plus, your friends and family will appreciate the effort you put in to remember their birthdays and make them feel special.
 
 ## Setup
 Before you can run the script, you need to make sure that you have the necessary Python packages installed. Specifically, you need to have pywhatkit and keyboard installed.   
