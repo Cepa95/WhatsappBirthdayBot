@@ -12,7 +12,7 @@ pip install pywhatkit
 Wait for the installation to complete. You should see a message indicating that the package was successfully installed.  
 Type the following command to install keyboard:  
 ```bash
-Pip install keyboard  
+pip install keyboard  
 ```
 Wait for the installation to complete. You should see a message indicating that the package was successfully installed.  
 Once you have installed the required packages, you should be able to run the script without any issues.  
