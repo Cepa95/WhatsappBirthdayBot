@@ -1,0 +1,12 @@
+Date: 21/3/2023
+Time: 1:32
+Phone Number: +385XXXXXXXXX
+Image: ../Python bot/Images\happyBirthday4.jpg
+Caption: FirstName LastName, may your birthday be as wonderful and special as you are! Happy Birthday and here's to another year of making unforgettable memories!
+--------------------
+Date: 21/3/2023
+Time: 1:33
+Phone Number: +385XXXXXXXXX
+Image: ../Python bot/Images\happyBirthday3.jpg
+Caption: FirstName LastName, Happy Birthday to someone who makes the world a better place just by being in it! May your day be filled with all the things that make you smile!
+--------------------

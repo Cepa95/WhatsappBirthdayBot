@@ -5,9 +5,22 @@ A simple WhatsApp bot that sends personalized birthday messages and images to yo
 ![WhatsappExample](https://user-images.githubusercontent.com/124800316/226494295-73ee108c-aad7-4e36-b6ae-6e1e20c5e75a.JPG)
 
 
+
 ## Setup
 Before you can run the script, you need to make sure that you have the necessary Python packages installed. Specifically, you need to have pywhatkit and keyboard installed.   
 Open a terminal window. Make sure that pip is installed in your environment.  
+
+You can do it throught the `requirements.txt` file, which contains all Python packages that you will need to run the script. 
+Type the following command to install packages: 
+
+```
+pip install -r requirements.txt
+```
+Wait for the installation to complete. You should see a message indicating that the packages were successfully installed. And that's it.  
+
+Another way to do it:  
+
+
 Type the following command to install pywhatkit: 
 ```bash 
 pip install pywhatkit 
@@ -18,7 +31,14 @@ Type the following command to install keyboard:
 pip install keyboard  
 ```
 Wait for the installation to complete. You should see a message indicating that the package was successfully installed.  
-Once you have installed the required packages, you should be able to run the script without any issues.  
+Once you have installed the required packages, you should be able to run the script without any issues.
+
+Type the following command to install keyboard:  
+```bash
+pip install requests  
+```
+Wait for the installation to complete. You should see a message indicating that the package was successfully installed.  
+Once you have installed the required packages, you should be able to run the script without any issues. 
 
 
 ## To run a Python script automatically
